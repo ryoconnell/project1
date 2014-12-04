@@ -20,4 +20,4 @@ hr {
 }
 p { 
 }
-img { display:block; }
+img, a { display:block; }
