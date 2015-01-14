@@ -4,24 +4,21 @@ body {
 }
 nav {
   background-color: #aaaaaa;
+  float:right;
   font-family: Arial, sans-serif;
   margin-right: 20px;
+}
+nav a {
+  color: blue;
+  text-decoration: none;
+  display: block;
+  float: left;
+  padding: 25px;
 }
 article {
   width: 33.33%;
   padding: 1em;
   float: left;
-}
-a {
-  color: blue;
-  text-decoration: none;
-  display: block;
-  float: right;
-  padding: 25px;
-}
-
-img {
-	padding: 20px 0 20px 0;
 }
 
 h1 {
@@ -34,21 +31,13 @@ h2 {
 	color: blue;
 }
 
-h3 {
-	margin-left:300px;
-
-}
-
 #container {
 	width: 960px;
 	margin: 0 auto;
 }
-
-#container1 {
-	width: 960px;
-	
+#container img {
+	width:100%;
 }
-
 .headline {
 	width: 150px;
 	padding: 10px;
