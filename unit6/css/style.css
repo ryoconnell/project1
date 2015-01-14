@@ -1,15 +1,17 @@
 * { margin:0; padding:0; box-sizing:border-box; }
-
+body {
+	background-color: #F5F5F5;
+}
 nav {
   background-color: #aaaaaa;
   font-family: Arial, sans-serif;
   margin-right: 20px;
 }
-
-body {
-	background-color: #F5F5F5;
+article {
+  width: 33.33%;
+  padding: 1em;
+  float: left;
 }
-
 a {
   color: blue;
   text-decoration: none;
@@ -19,7 +21,6 @@ a {
 }
 
 img {
-	float: none;
 	padding: 20px 0 20px 0;
 }
 
@@ -61,24 +62,10 @@ h3 {
 	margin-top: 25px;
 }
 
-.article {
-  width: 280px;
-  padding: 10px;
-  margin: 0 10px;
-  float: left;
-  border-color: black;
-  border-style: solid;
-}
-
-
-#article1 {
-  
-}
-
-#article2 {
-  
-}
-
-#article3 {
-  
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
