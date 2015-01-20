@@ -3,13 +3,12 @@ body {
 	background-color: #F5F5F5;
 }
 nav {
-  background-color: #aaaaaa;
   float:right;
   font-family: Arial, sans-serif;
   margin-right: 20px;
 }
 nav a {
-  color: blue;
+  color: #25366c;
   text-decoration: none;
   display: block;
   float: left;
@@ -23,12 +22,16 @@ article {
 
 h1 {
 	margin: 0 50px;
-	color: blue;
+	color: #25366c;
 	font-size: 40px;
 }
 
 h2 {
-	color: blue;
+	color: #25366c;
+}
+
+a {
+	color: #25366c;
 }
 
 #container {
