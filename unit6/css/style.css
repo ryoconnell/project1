@@ -18,23 +18,38 @@ header img {
 	width:100%;
 }
 article {
-  width: 33.33%;
+  width: 50%;
   padding: 1em;
   float: left;
 }
-h1, h2, a {
+article img {
+	display:block;
+	width:50%;
+	float:left;
+}
+article>div {
+	width:50%;
+	float:left;
+}
+h1, h2, h3, a {
 	color: #25366c;
 }
 h1 {
 	margin: 0 50px;
 	font-size: 40px;
 }
-#container {
+section>div {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-#container img {
-	width:100%;
+#movies {
+	background:url(http://cdn.flaticon.com/png/256/23697.png) no-repeat #9c27b0;
+}
+#tv {
+	background-color:#4CAF50;
+}
+#books {
+	background-color:#FF9800;
 }
 .headline {
 	width: 150px;
