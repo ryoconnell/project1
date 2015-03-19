@@ -19,23 +19,15 @@ article {
   padding: 1em;
   float: left;
 }
-
+h1, h2, a {
+	color: #25366c;
+}
 h1 {
 	margin: 0 50px;
-	color: #25366c;
 	font-size: 40px;
 }
-
-h2 {
-	color: #25366c;
-}
-
-a {
-	color: #25366c;
-}
-
 #container {
-	width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 #container img {
@@ -47,11 +39,8 @@ a {
 	margin: 0 10px;
 	float: left;
 }
-
-
 #name {
 	width: 700px;
-	margin-top: 25px;
 }
 
 .clearfix:after { 
