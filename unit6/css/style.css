@@ -14,6 +14,9 @@ nav a {
   float: left;
   padding: 25px;
 }
+header img {
+	width:100%;
+}
 article {
   width: 33.33%;
   padding: 1em;
