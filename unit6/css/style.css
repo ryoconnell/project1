@@ -15,32 +15,44 @@ nav a {
   padding: 25px;
 }
 header img {
-	max-width: 1200px
+	width:100%;
 }
 article {
-  width: 50%;
+  width: 100%;
   padding: 1em;
-  float: left;
 }
 article img {
 	display:block;
-	width:50%;
+	width:38%;
 	float:left;
 }
 article>div {
-	width:50%;
+	width:62%;
 	float:left;
+	padding:0 1em;
 }
 h1, h2, h3, a {
 	color: #25366c;
 }
 h1 {
-	margin: 0 50px;
-	font-size: 40px;
+	margin: 0 2.5em;
+	font-size: 2em;
+}
+h3 {
+	font-size:2em;
 }
 section>div {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 5px auto;
+}
+.featured article {
+	width:50%;
+	float:left;
+	padding:0 2em;
+}
+.featured img, .featured div {
+	width:100%;
+	float:none;
 }
 #movies {
 	background-color:#2196F3;
