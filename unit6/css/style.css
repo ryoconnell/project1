@@ -15,7 +15,7 @@ nav a {
   padding: 25px;
 }
 header img {
-	width:100%;
+	max-width: 1200px
 }
 article {
   width: 50%;
@@ -39,17 +39,18 @@ h1 {
 	font-size: 40px;
 }
 section>div {
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 1000px;
+	margin: 5px auto;
 }
 #movies {
-	background:url(http://cdn.flaticon.com/png/256/23697.png) no-repeat #9c27b0;
+	background-color:#2196F3;
 }
 #tv {
-	background-color:#4CAF50;
+	color:#4CAF50;
+
 }
 #books {
-	background-color:#FF9800;
+	background-color:#9E9E9E;
 }
 .headline {
 	width: 150px;
