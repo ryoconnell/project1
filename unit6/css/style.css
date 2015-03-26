@@ -75,7 +75,7 @@ article.featured {
 	width: 700px;
 }
 
-.clearfix:after { 
+.clearfix:after, article:after { 
    content: "."; 
    visibility: hidden; 
    display: block; 
