@@ -44,11 +44,12 @@ h3 {
 section>div {
 	max-width: 1200px;
 	margin: 5px auto;
+	padding:4em 0;
 }
-.featured article {
+article.featured {
 	width:50%;
 	float:left;
-	padding:0 2em;
+	padding:2em;
 }
 .featured img, .featured div {
 	width:100%;
