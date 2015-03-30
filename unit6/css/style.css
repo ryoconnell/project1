@@ -51,6 +51,9 @@ article.featured {
 	float:left;
 	padding:2em;
 }
+section a {
+	color:#F5F5F5;
+}
 .featured img, .featured div {
 	width:100%;
 	float:none;
@@ -59,11 +62,10 @@ article.featured {
 	background-color:#2196F3;
 }
 #tv {
-	color:#4CAF50;
-
+	background-color:#42A5F5;
 }
 #books {
-	background-color:#9E9E9E;
+	background-color:#64B5F6;
 }
 .headline {
 	width: 150px;
@@ -74,7 +76,21 @@ article.featured {
 #name {
 	width: 700px;
 }
-
+input {
+  border: 0;
+  font-size:18px;
+  float: left;
+  padding: 25px;
+  display: block;
+}
+input[type="submit"] {
+  background: #358df2;
+  color: white;
+ }
+input[type="text"] {
+ 	outline: 2px solid #25366c;
+ 	background-color: #F5F5F5;
+ }
 .clearfix:after, article:after { 
    content: "."; 
    visibility: hidden; 
