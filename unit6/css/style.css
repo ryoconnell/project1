@@ -28,6 +28,7 @@ article img {
 	display:block;
 	width:38%;
 	float:left;
+	padding:0 1em;
 }
 article>div {
 	width:62%;
@@ -40,6 +41,9 @@ h1, h2, h3, a {
 h1 {
 	margin: 0 2.5em;
 	font-size: 2em;
+}
+h2 {
+	padding:0 1.5em;
 }
 h3 {
 	font-size:2em;
