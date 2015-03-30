@@ -7,6 +7,9 @@ nav {
   font-family: Arial, sans-serif;
   margin-right: 20px;
 }
+footer nav {
+	margin-right:0;
+}
 nav a {
   color: #25366c;
   text-decoration: none;
@@ -62,10 +65,10 @@ section a {
 	background-color:#2196F3;
 }
 #tv {
-	background-color:#42A5F5;
+	background-color:#64b5f6;
 }
 #books {
-	background-color:#64B5F6;
+	background-color:#1976d2;
 }
 .headline {
 	width: 150px;
@@ -88,8 +91,10 @@ input[type="submit"] {
   color: white;
  }
 input[type="text"] {
- 	outline: 2px solid #25366c;
+ 	outline: 2px solid #0d47a1;
  	background-color: #F5F5F5;
+ 	padding:.5em;
+ 	margin:.75em;
  }
 .clearfix:after, article:after { 
    content: "."; 
