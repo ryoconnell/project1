@@ -7,9 +7,6 @@ nav {
   font-family: Arial, sans-serif;
   margin-right: 20px;
 }
-footer nav {
-	margin-right:0;
-}
 nav a {
   color: #25366c;
   text-decoration: none;
@@ -28,7 +25,6 @@ article img {
 	display:block;
 	width:38%;
 	float:left;
-	padding:0 1em;
 }
 article>div {
 	width:62%;
@@ -41,9 +37,6 @@ h1, h2, h3, a {
 h1 {
 	margin: 0 2.5em;
 	font-size: 2em;
-}
-h2 {
-	padding:0 1.5em;
 }
 h3 {
 	font-size:2em;
@@ -58,9 +51,6 @@ article.featured {
 	float:left;
 	padding:2em;
 }
-section a {
-	color:#F5F5F5;
-}
 .featured img, .featured div {
 	width:100%;
 	float:none;
@@ -69,10 +59,11 @@ section a {
 	background-color:#2196F3;
 }
 #tv {
-	background-color:#64b5f6;
+	color:#4CAF50;
+
 }
 #books {
-	background-color:#1976d2;
+	background-color:#9E9E9E;
 }
 .headline {
 	width: 150px;
@@ -83,23 +74,7 @@ section a {
 #name {
 	width: 700px;
 }
-input {
-  border: 0;
-  font-size:18px;
-  float: left;
-  padding: 25px;
-  display: block;
-}
-input[type="submit"] {
-  background: #358df2;
-  color: white;
- }
-input[type="text"] {
- 	outline: 2px solid #0d47a1;
- 	background-color: #F5F5F5;
- 	padding:.5em;
- 	margin:.75em;
- }
+
 .clearfix:after, article:after { 
    content: "."; 
    visibility: hidden; 
@@ -107,36 +82,3 @@ input[type="text"] {
    height: 0; 
    clear: both;
 }
- @media only screen and (min-width:752px) and (max-width:906px) {
- 	body{
- 		background-color:red;
- 	}
- 	#name {
- 		width: 500px;
- 	}
- 	nav a{
- 		padding:10px;
- 	}
- }
-
- @media only screen and (min-width:481px) and (max-width:751px) {
- 	body{
- 		background-color:green;}
- 	nav {
- 		float:none;
- 	}
- 	article.featured {
-	width: 100%;
-  	padding: 1em;
-}
-	.featured img, .featured div {
-	display:block;
-	width:38%;
-	float:left;
-	padding:0 1em;
-}
-}
-@media only screen and (min-width:300px) and (max-width:480px) {
- 	body{
- 		background-color:orange;
- 	} 
