@@ -103,6 +103,9 @@ input[type="text"] {
  .mobile-nav {
  	display:none;
  }
+ .menu-btn {
+ 	float:right;
+ }
  .menu-btn div {
 	position: absolute;
 	left: 100%;
