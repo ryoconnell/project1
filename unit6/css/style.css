@@ -100,6 +100,38 @@ input[type="text"] {
  	padding:.5em;
  	margin:.75em;
  }
+ .mobile-nav {
+ 	display:none;
+ }
+ .menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
 .clearfix:after, article:after { 
    content: "."; 
    visibility: hidden; 
@@ -111,6 +143,9 @@ input[type="text"] {
  @media only screen and (min-width:550px) and (max-width:835px) {
  	nav a {
  		display:none;
+ 	}
+ 	.mobile-nav {
+ 		display:block;
  	}
  	article.featured {
 		width: 100%;
@@ -132,6 +167,9 @@ input[type="text"] {
 @media only screen and (min-width:421px) and (max-width:549px) {
  	nav a {
  		display:none;
+ 	}
+ 	.mobile-nav {
+ 		display:block;
  	}
  	h1 {
  		font-size:1.5em;
@@ -166,6 +204,9 @@ input[type="text"] {
 	nav a {
  		display:none;
 	}
+	.mobile-nav {
+ 		display:block;
+ 	}
 	 h3 {
  		font-size:1em;
 	 }
