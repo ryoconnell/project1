@@ -108,7 +108,7 @@ input[type="text"] {
    clear: both;
 }
 
- @media only screen and (min-width:550px) and (max-width:906px) {
+ @media only screen and (min-width:550px) and (max-width:707px) {
  	nav {
  		float:none;
  	}
@@ -154,71 +154,73 @@ input[type="text"] {
 }
 @media only screen and (min-width:363px) and (max-width:549px) {
  	nav a {
- 		display:none;}
+ 		display:none;
+ 	}
  	.headline {
-	width: 100px;
-	padding: 10px;
-	margin: 0 10px;
-	float: left;
-}
+		width: 100px;
+		padding: 10px;
+		margin: 0 10px;
+		float: left;
+	}
 	h3 {
 		font-size: 1.5em;
 	}
  	article.featured {
-	width: 100%;
-  	padding: 1em;
-}
+		width: 100%;
+	  	padding: 1em;
+	}
 	.featured img {
-	display:block;
-	width:100%;
-	float:none;
-	padding:0 1em;
-
-}
+		display:block;
+		width:100%;
+		float:none;
+		padding:0 1em;
+	
+	}
 	.featured div {
 		display:block;
 		float:none;
 		width: 100%;
 	}
 	input[type="text"] {
- 	outline: 2px solid #0d47a1;
- 	background-color: #F5F5F5;
- 	padding: 0;
- 	margin:.25em;
- }
+	 	outline: 2px solid #0d47a1;
+	 	background-color: #F5F5F5;
+	 	padding: 0;
+	 	margin:.25em;
+	 }
  	input {
-  	border: 0;
-  	font-size:18px;
-  	float: left;
-  	padding: 5px;
-  	display: block;}
-	input[type="submit"] {
-  	background: green;
-  	color: white;
-}
+	  	border: 0;
+	  	font-size:18px;
+	  	float: left;
+	  	padding: 5px;
+	  	display: block;}
+		input[type="submit"] {
+	  	background: green;
+	  	color: white;
+	}
 }
 @media only screen and (max-width:362px) {
 	nav a {
- 		display:none;}
- h3 {
- 	font-size:1em;
- }
- .headline {
-	width: 100px;
-	padding: 10px;
-	margin: 0 10px;
-	float: left;
-}
+ 		display:none;
+	}
+	 h3 {
+ 		font-size:1em;
+	 }
+	 .headline {
+		width: 100px;
+		padding: 10px;
+		margin: 0 10px;
+		float: left;
+	}
  	article.featured {
-	width: 100%;
-  	padding: 1em;
-}
+		width: 100%;
+	  	padding: 1em;
+	}
 	.featured img {
-	display:block;
-	width:100%;
-	float:none;
-	padding:0 1em;
-}
+		display:block;
+		width:100%;
+		float:none;
+		padding:0 1em;
+	}
 	.featured div {
 		display:block;
 		float:none;
@@ -229,10 +231,10 @@ input[type="text"] {
 		padding: 1em;
 	}
 	article img {
-	display:block;
-	width:100%;
-	float:none;
-	padding:0 1em;
+		display:block;
+		width:100%;
+		float:none;
+		padding:0 1em;
 	}
 	article>div {
 		display:block;
@@ -240,19 +242,19 @@ input[type="text"] {
 		width: 100%;
 	}
 	input[type="text"] {
- 	outline: 2px solid #0d47a1;
- 	background-color: #F5F5F5;
- 	padding: 0;
- 	margin:.25em;
- }
- input {
-  	border: 0;
-  	font-size:18px;
-  	float: left;
-  	padding: 5px;
-  	display: block;}
-	input[type="submit"] {
-  	background: green;
-  	color: white;
-}
+	 	outline: 2px solid #0d47a1;
+	 	background-color: #F5F5F5;
+	 	padding: 0;
+	 	margin:.25em;
+	 }
+	input {
+	  	border: 0;
+	  	font-size:18px;
+	  	float: left;
+	  	padding: 5px;
+	  	display: block;}
+		input[type="submit"] {
+	  	background: green;
+	  	color: white;
+	}
 }
