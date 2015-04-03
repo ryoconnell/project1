@@ -39,7 +39,8 @@ h1, h2, h3, a {
 	color: #25366c;
 }
 h1 {
-	margin: 0 2.5em;
+	float:left;
+	margin:.5em;
 	font-size: 2em;
 }
 h2 {
@@ -49,9 +50,9 @@ h3 {
 	font-size:2em;
 }
 section>div {
-	max-width: 1200px;
-	margin: 5px auto;
-	padding:1em 0;
+	max-width: 75em;
+	margin: .5em auto;
+	padding:4em 0;
 }
 article.featured {
 	width:50%;
@@ -60,6 +61,8 @@ article.featured {
 }
 section a {
 	color:#F5F5F5;
+	display:block;
+	padding:.5em 0;
 }
 .featured img, .featured div {
 	width:100%;
@@ -79,9 +82,6 @@ section a {
 	padding: 10px;
 	margin: 0 10px;
 	float: left;
-}
-#name {
-	width: 700px;
 }
 input {
   border: 0;
@@ -108,56 +108,36 @@ input[type="text"] {
    clear: both;
 }
 
- @media only screen and (min-width:550px) and (max-width:707px) {
- 	nav {
- 		float:none;
+ @media only screen and (min-width:550px) and (max-width:835px) {
+ 	nav a {
+ 		display:none;
  	}
- 	.headline {
-	width: 100px;
-	padding: 10px;
-	margin: 0 10px;
-	float: left;
-}
  	article.featured {
-	width: 100%;
-  	padding: 1em;
-}
+		width: 100%;
+	  	padding: 1em;
+	}
 	.featured img {
-	display:block;
-	width:100%;
-	float:none;
-	padding:0 1em;
-
-}
+		display:block;
+		width:100%;
+		float:none;
+		padding:0 1em;
+	
+	}
 	.featured div {
 		display:block;
 		float:none;
 		width: 100%;
 	}
-	
-	input[type="text"] {
- 	outline: 2px solid #0d47a1;
- 	background-color: #F5F5F5;
- 	padding: 0;
- 	margin:.25em;
- }
- input {
-  	border: 0;
-  	font-size:18px;
-  	float: left;
-  	padding: 5px;
-  	display: block;}
-	input[type="submit"] {
-  	background: green;
-  	color: white;
 }
-}
-@media only screen and (min-width:363px) and (max-width:549px) {
+@media only screen and (min-width:421px) and (max-width:549px) {
  	nav a {
  		display:none;
  	}
+ 	h1 {
+ 		font-size:1.5em;
+ 	}
  	.headline {
-		width: 100px;
+		width: 112.5px;
 		padding: 10px;
 		margin: 0 10px;
 		float: left;
@@ -181,24 +161,8 @@ input[type="text"] {
 		float:none;
 		width: 100%;
 	}
-	input[type="text"] {
-	 	outline: 2px solid #0d47a1;
-	 	background-color: #F5F5F5;
-	 	padding: 0;
-	 	margin:.25em;
-	 }
- 	input {
-	  	border: 0;
-	  	font-size:18px;
-	  	float: left;
-	  	padding: 5px;
-	  	display: block;}
-		input[type="submit"] {
-	  	background: green;
-	  	color: white;
-	}
 }
-@media only screen and (max-width:362px) {
+@media only screen and (max-width:420px) {
 	nav a {
  		display:none;
 	}
@@ -240,21 +204,5 @@ input[type="text"] {
 		display:block;
 		float:none;
 		width: 100%;
-	}
-	input[type="text"] {
-	 	outline: 2px solid #0d47a1;
-	 	background-color: #F5F5F5;
-	 	padding: 0;
-	 	margin:.25em;
-	 }
-	input {
-	  	border: 0;
-	  	font-size:18px;
-	  	float: left;
-	  	padding: 5px;
-	  	display: block;}
-		input[type="submit"] {
-	  	background: green;
-	  	color: white;
 	}
 }
