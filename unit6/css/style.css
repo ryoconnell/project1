@@ -130,7 +130,21 @@ input[type="text"] {
 }
 
 .expand {
-	display: block !important; 
+	display: block !important;
+	position:absolute;
+	right:0;
+	top:4.7em;
+	width:50%;
+	background:#fff;
+	padding:2em;
+}
+.mobile-nav ul {
+	list-style-type:none;
+}
+.mobile-nav li {
+	font-size:1.5em;
+	margin:.5em;
+	padding:.5em;
 }
 .clearfix:after, article:after { 
    content: "."; 
@@ -164,7 +178,7 @@ input[type="text"] {
 		width: 100%;
 	}
 }
-@media only screen and (min-width:421px) and (max-width:549px) {
+@media only screen and (min-width:493px) and (max-width:549px) {
  	nav a {
  		display:none;
  	}
@@ -200,7 +214,7 @@ input[type="text"] {
 		width: 100%;
 	}
 }
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:493px) {
 	nav a {
  		display:none;
 	}
