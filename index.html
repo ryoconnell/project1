@@ -1,52 +1,52 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="styles.style.css"/>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-<script type="text/javascript" src="./javascript.js"></script>
-
-
-  </script>
-  </head>
-  <body>
-  <table id="TTT game board" style="" width="60%">
-            <tr>
-                <th id="Cell 00" height="150px" width="150px">S</th>
-                <th id="Cell 01" height="150px" width="150px">O</th>
-                <th id="Cell 02" height="150px" width="150px">O</th>
-            </tr>
-            <tr>
-                <th id="Cell 10" height="150px" width="150px">O</th>
-                <th id="Cell 11" height="150px" width="150px">X</th>
-                <th id="Cell 12" height="150px" width="150px">X</th>
-            </tr>
-            <tr>
-                <th id="Cell 20" height="150px" width="150px">O</th>
-                <th id="Cell 21" height="150px" width="150px">X</th>
-                <th id="Cell 22" height="150px" width="150px">X</th>
-           </tr>
-  </table>
-
-    <div id ="box">
-      <h1>THE</h1><h2> VERY BASIC</h2><h3> TIC - TAC - TOE!</h3>
-      <canvas id="box0"</canvas>
-      <canvas id="box1"</canvas>
-      <canvas id="box2"</canvas>
-      <canvas id="box3"</canvas>
-      <canvas id="box4"</canvas>
-      <canvas id="box5"</canvas>
-      <canvas id="box6"</canvas>
-      <canvas id="box7"</canvas>
-      <canvas id="box8"</canvas>
-    </div>
-  </body>
-</html>
-
+<script src="javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="styes/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-
 <body>
+<table class="id">
+<tr>
+<tr>
+<button type="button">Start New Game</button>
+</tr>
+ <td>
+ <img src="http://www.meshbelt.com/X.gif" id="x" width=100 height=100>
+ <p id="p1">Player 1</p>
+ Score: <p id="p1score">0</p>
+ </td><td>
+ <img src="http://1.bp.blogspot.com/-lyELSi3oPWc/Ux3UlhpiAWI/AAAAAAAAEGI/VLvmMCW7aco/s1600/playO.png" width=100 height=100>
+ <p id="p2">Player 2</p>
+ Score: <p id="p2score">0</p>
+ </td>
+</tr>
+<tr>
+<td><img src="http://www.meshbelt.com/X.gif" id="ohturn" width=20 height=20></td>
+<td><img src="http://1.bp.blogspot.com/-lyELSi3oPWc/Ux3UlhpiAWI/AAAAAAAAEGI/VLvmMCW7aco/s1600/playO.png" id="eksturn" width=20 height=20></td>
+</table>
 
+<table border=1>
+<tr>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id="box0" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg"id="box1" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg"id="box2" onclick="changeImage(this.id)" /></td>
+</tr>
+<tr>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id="box3" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id="box4" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id= "box5" onclick="changeImage(this.id)" /></td>
+<tr>
+</tr>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id="box6" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg"  id="box7" onclick="changeImage(this.id)" /></td>
+<td><img alt="" src="http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg" id="box8" onclick="changeImage(this.id)" /></td>
+</tr>
+</table>
 
+<br>
+<table><td>
+</table>
 </body>
 </html>
 
