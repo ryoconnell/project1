@@ -1,94 +1,113 @@
-// A $( document ).ready() block.
-$( document ).ready(function() {
-console.log( "ready!" );
+//jQuery.ajax
 
-//Global Variables
-    var colored;
-    var content;
-    var winningCombinations;
-    var turn = 0;
-    var grid;
-    var c;
-    var cxt;
-    var squaresFilled = 0;
+    var turn = "x";
+    var player1 = "";
+    var player1score = 0;
+    var player2 = "";
+    var player2score = 0;
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+    $(document).ready(function () {
+      $("#newgame").click(function () {
+        resetGame();
+      });
+    });
 
-    //Instanciate Arrays
-    window.onload=function(){
-
-      colored = new Array();
-      content = new Array();
-      winningCombinations = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
-
-      for(var i = 0; i <= 8; i++){
-      colored[i] = false;
-      content[i]='';
-      }
+    function changeImage(clickedId){
+        var check = clickedId.substring(3, 4);
+        if(gameState[check] == 0)
+        {
+            document.getElementById("box"+check).src = "http://slredux.com/code/javatictactoe/"+turn+".png";
+            gameState[check] = turn;
+            if(turn == "x")
+              turn = "o";
+            else
+              turn = "x";
+            checkWinner();
+        }
+        else
+        {
+          alert("That box is not available!");
+        }
     }
 
-    //Game methods
-    function canvasClicked(canvasNumber){
-      theCanvas = "canvas"+canvasNumber;
-      c = document.getElementById(grid);
-      cxt = c.getContext("2d");
+    function resetGame() {
+      gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-      if(colored[canvasNumber-1] ==false){
-        if(turn%2==0){
-          cxt.beginPath();
-          cxt.moveTo(10,10);
-          cxt.lineTo(40,40);
-          cxt.moveTo(40,10);
-          cxt.lineTo(10,40);
-          cxt.stroke();
-          cxt.closePath();
-          content[canvasNumber-1] = 'X';
+      //if (turn == "x")
+        //turn = "o";
+      //else
+        //turn = "x";
+      //alert("We have a winner!");
+
+      var url = "http://www.cellphone-wallpapers.net/Wallpapers/User/11421-blank-white.jpg";
+      $("#box0").attr("src", url);
+      $("#box1").attr("src", url);
+      $("#box2").attr("src", url);
+      $("#box3").attr("src", url);
+      $("#box4").attr("src", url);
+      $("#box5").attr("src", url);
+      $("#box6").attr("src", url);
+      $("#box7").attr("src", url);
+      $("#box8").attr("src", url);
+    }
+
+    function checkWinner()
+    {
+        var winner = 0;
+
+        if (gameState[0] == gameState[1] && gameState[1] == gameState[2] &&gameState[2] != 0) {
+          winner = gameState[0];
+        }
+        else if (gameState[3] == gameState[4] && gameState[4] == gameState[5]   && gameState[5] != 0) {
+          winner = gameState[3];
+        }
+        else if (gameState[6] == gameState[7] && gameState[7] == gameState[8]   && gameState[8] != 0) {
+          winner = gameState[6];
+        }
+        else if (gameState[0] == gameState[3] && gameState[3] == gameState[6]   && gameState[6] != 0) {
+          winner = gameState[0];
+        }
+        else if (gameState[1] == gameState[4] && gameState[4] == gameState[7]   && gameState[7] != 0) {
+          winner = gameState[1];
+        }
+        else if (gameState[2] == gameState[5] && gameState[5] == gameState[8]   && gameState[8] != 0) {
+          winner = gameState[2];
+        }
+        else if (gameState[0] == gameState[4] && gameState[4] == gameState[8]   && gameState[8] != 0) {
+          winner = gameState[0];
+        }
+        else if (gameState[2] == gameState[4] && gameState[4] == gameState[6]   && gameState[6] != 0) {
+          winner = gameState[2];
         }
 
-        else{
-          cxt.beginPath();
-          cxt.arc(25,25,20,0,Math.PI*2,true);
-          cxt.stroke();
-          cxt.closePath();
-          content[canvasNumber-1] = 'O';
+        if (winner != 0) {
+          //alert("We have a winner!");
+          if (winner == "x") {
+            player1score ++;
+            $("#p1score").text(player1score);
+          }
+          else if (winner == "o") {
+            player2score ++;
+            $("#p2score").text(player2score);
+          }
         }
+    }
 
-        turn++;
-        colored[canvasNumber-1] = true;
-        squaresFilled++;
-        checkForWinners(content[canvasNumber-1]);
-
-        if(squaresFilled==9){
-          alert("THE GAME IS OVER!");
-          location.reload(true);
+    function setName(id)
+    {
+        if(id == "x")
+        {
+          player1 = prompt("Please enter your name", "Harry Potter");
+    document.getElementById("p1").innerHTML = player1;
         }
-
-      }
-      else{
-        alert("THAT SPACE IS ALREADY OCCUPIED WITH YOUR HEART!");
-      }
-
+        else if(id == "o")
+        {
+          player2 = prompt("Please enter your name, player 2", "Hermiomiony");
+          document.getElementById("p2").innerHTML = player2;
+        }
     }
 
-    function checkForWinners(symbol){
 
-      for(var a = 0; a < winningCombinations.length; a++){
-      if(content[winningCombinations[a][0]]==symbol&&content[winningCombinations[a][1]]== symbol&&content[winningCombinations[a][2]]==symbol){
-        alert(symbol+ " WON!");
-        playAgain();
-      }
-      }
 
-    }
-
-    function playAgain(){
-      y=confirm("PLAY AGAIN?");
-      if(y==true){
-        alert("OKAY! ^^/>");
-        location.reload(true);
-      }
-      else{
-        alert("SO LONG,SUCKER!");
-    }
-
-    }
 
